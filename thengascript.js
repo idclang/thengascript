@@ -1,54 +1,54 @@
 const coreLangKeywords = {
-    "അടിസ്ഥാനം": "default",
+    "അടിത്തറ": "default",
     "ആണെങ്കിൽ":"if",
     "അല്ലെങ്കിൽ": "else",
-    "ആവട്ടെ": "let",
-    "അവസ്ഥ": "case",
-    "അസാധു": "null",
+    "ആകു": "let",
+    "നില": "case",
+    "അറ്റ": "null",
     "ഇറക്കുമതി": "import",
     "ഇത്": "this",
     "ഇന്": "for",
     "ഇല്‍": "in",
-    "ഉദാഹരണമാണ്": "instanceof",
-    "ഉയര്‍ന്നതരം": "super",
-    "എറിയുക": "throw",
+    "എടുത്തുകാട്ടാണ്": "instanceof",
+    "മേല്‍വക": "super",
+    "എറിയു": "throw",
     "എണ്ണല്‍": "enum",
     "എത്തരം": "typeof",
     "എന്നിരിക്കെ": "while",
     "ഒടുവിൽ": "finally",
     "ഒപ്പം": "with",
     "കയറ്റുമതി": "export",
-    "കളയുക": "delete",
-    "കാത്തിരിക്കുക": "await",
-    "ഗണം": "class",
-    "ചെയ്യുക": "do",
-    "തിരിക്കുക": "switch",
+    "കളയു": "delete",
+    "കാത്തിരിക്കു": "await",
+    "ഇനം": "class",
+    "ചെയ്യു": "do",
+    "തിരിക്കു": "switch",
     "തിരുത്തൽ": "debugger",
-    "തുടരുക": "continue",
+    "തുടരു": "continue",
     "തെറ്റ്": "false",
-    "നല്‍കുക": "yield",
-    "നിർവഹിക്കുന്നു": "implements",
-    "പരിവര്‍ത്തനം": "var",
-    "പിടിക്കുക": "catch",
-    "പുതിയ": "new",
+    "നല്‍കു": "yield",
+    "നിലവില്‍വരുത്തു": "implements",
+    "മാറ്റംവരുന്ന": "var",
+    "പിടിക്കു": "catch",
+    "പുതു": "new",
     "പ്രയോഗം": "function",
     "പൊതു": "public",
-    "ഭാണ്‌ഡം": "package",
+    "പൊതി": "package",
     "മടക്കം": "return",
-    "മുടക്കുക": "break",
-    "മൂല്യനിർണ്ണയം": "eval",
-    "വാദം": "arguments",
-    "വ്യർത്ഥം": "void",
-    "വ്യാപിപ്പിക്കുന്നു": "extends",
+    "മുടക്കു": "break",
+    "വിലയിരുത്തല്‍": "eval",
+    "വഴക്ക്": "arguments",
+    "പാഴ്": "void",
+    "വിടര്‍ത്തുന്നു": "extends",
     "ശരി": "true",
-    "ശാശ്വതം": "const",
-    "ശ്രമിക്കുക": "try",
-    "സമ്പര്‍ക്കമുഖം": "interface",
-    "സുരക്ഷിതമാക്കപ്പെട്ട": "protected",
-    "സ്വകാര്യ": "private",
-    "സ്ഥായി": "static"};
+    "മാറാത്ത": "const",
+    "നോക്കു": "try",
+    "ഇടപെടല്‍മുകം": "interface",
+    "കാക്കപ്പെട്ട": "protected",
+    "ഒളിവായ": "private",
+    "ഉറച്ച": "static"};
 
-const browserObjects = {"കാണിക്കുക": "console.log", "മുന്നറിയിപ്പ്": "alert"};
+const browserObjects = {"കാട്ടു": "console.log", "മുന്നറിയിപ്പ്": "alert"};
 
 const മലയാളം_to_english = Object.assign({}, coreLangKeywords, browserObjects);
 
@@ -129,6 +129,6 @@ async function compileScripts() {
 if(typeof window != "undefined")
     window.addEventListener('DOMContentLoaded', compileScripts);
 
-/* തർജ്ജമയും ഇവാലുവേഷനും നോഡിൽ ലഭ്യം */
+/* മൊഴിമാറ്റവും വിലയിരുത്തലും നോഡില്‍ കിട്ടുന്നതാണ് */
 if(typeof module != "undefined" && module.exports)
     module.exports = {translate, run, compile};
